@@ -1,0 +1,189 @@
+// Specifications
+* {
+  box-sizing: border-box;
+}
+
+*::after {
+  box-sizing: border-box;
+}
+
+*::before {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: $main-color;
+  font-family: $font-family;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (max-width: 991px) {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body.hidden {
+  overflow: hidden
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+table {
+  border-spacing: 0;
+  width: 100%;
+}
+section {
+  padding-top: 0;
+  padding-bottom: 40px;
+  @media(max-width: 991px){
+   padding-bottom: 35px; 
+  }
+  &.section-first {
+    padding-top: 40px;
+    @media(max-width: 991px){
+      padding-top: 15px;
+    }
+  }
+}
+h1 {
+  font-size: 35px;
+  line-height: 45px;
+  color: #54646f;
+  text-transform: uppercase;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+.main {
+  flex: 1 0 auto;
+  background-color: #eaeef1;
+  min-height: 100vh;
+}
+.bg-top {
+  background-image: url('@img/sana_logo.png');
+  background-position: top -100px center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.footer {
+  flex: 0 0 auto;
+}
+
+.container {
+  padding: 0 var(--container-offset);
+  max-width: var(--container-width);
+  margin: 0 auto;
+
+  @media (max-width: 575px) {
+    padding: 0 20px;
+  }
+}
+
+.text-white {
+  color: #fff;
+}
+.flex {
+  display: flex;
+}
+.flex-column {
+  flex-direction: column;
+}
+.items-center {
+  align-items: center;
+}
+.gap-1 {
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.gap-3 {
+  column-gap: 15px;
+  row-gap: 15px;
+}
+.gap-4 {
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+
+.mb-8 {
+  margin-bottom: 40px!important;
+}
+.mb-10 {
+  margin-bottom: 45px;
+}
+.pt-0 {
+  padding-top: 0;
+}
+.pb-0{
+  padding-bottom: 0;
+}
+
+.pt-10 {
+  padding-top: 20px;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  
+}
+.grid-cols-2 {
+  grid-column: 6 span;
+}
+.content {
+  p {
+    margin-bottom: 10px;
+    font-size: 13px;
+    line-height: normal;
+    color: #515151;
+    strong {
+      color: #000;
+    }
+    &.cursive {
+      font-style: italic;
+    }
+    &.text-lg {
+      font-size: 22px;
+      line-height: 30px;
+    }
+  }
+}
+.text-medium {
+  font-size: 14px!important;
+  line-height: 20px;
+}
+.text-lg {
+  font-size: 19px;
+  line-height: 28px;
+}
+.content-wrapper {
+  column-gap: 30px;
+}

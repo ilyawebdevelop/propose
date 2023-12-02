@@ -1,0 +1,40 @@
+.image-left {
+  background-repeat: no-repeat;
+  background-size: calc(50% - 50px);
+  background-position: left bottom;
+  min-height: 400px;
+  position: relative;
+  .container {
+    position: relative;
+  }
+}
+.image-right {
+  background-repeat: no-repeat;
+  background-size: calc(50% - 75px);
+  background-position: right top;
+  min-height: 400px;
+  margin-top: 25px;
+  margin-bottom: -82px;
+  position: relative;
+  .container {
+    position: relative;
+  }
+}
+
+.img-left {
+ width: calc(50% - 30px);
+  position: absolute;
+  object-fit: contain;
+  height: 100%;
+  top: 0;
+  height: 400px;
+}
+.img-right{
+  width: calc(50% - 30px);
+  position: absolute;
+  right: 0;
+  object-fit: contain;
+  height: 100%;
+  top: 0;
+  height: 400px;
+}
