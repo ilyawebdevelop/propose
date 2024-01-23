@@ -474,15 +474,13 @@ h1 {
   }
 }
 .about__param:not(:last-child) {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .about__param-name {
-  font-size: 18px;
   line-height: normal;
   font-weight: 700;
 }
 .about__param-text {
-  font-size: 18px;
   line-height: normal;
 }
 .about .q-code {
@@ -809,11 +807,27 @@ h1 {
   grid-template-columns: repeat(12, 1fr);
   column-gap: 30px;
 }
+@media (max-width: 575px) {
+  .footer__wrapper {
+    column-gap: 0;
+  }
+}
 .footer__left {
   grid-column: 6 span;
 }
+@media (max-width: 575px) {
+  .footer__left {
+    grid-column: 12 span;
+  }
+}
 .footer__right {
   grid-column: 6 span;
+}
+@media (max-width: 575px) {
+  .footer__right {
+    grid-column: 12 span;
+    margin-top: 30px;
+  }
 }
 .footer__item {
   margin-bottom: 10px;
@@ -823,8 +837,6 @@ h1 {
   width: 22px;
 }
 .footer__item p {
-  font-size: 13px;
-  line-height: 18px;
   color: #fff;
 }
 
@@ -883,4 +895,9 @@ h1 {
 
 .footerBottom {
   margin-top: -74px;
+}
+@media (max-width: 575px) {
+  .footerBottom .footerContainer {
+    padding-top: 204px;
+  }
 }
