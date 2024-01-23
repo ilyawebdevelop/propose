@@ -1,8 +1,18 @@
-.main-map {
+.map{
   background-image: url('@img/sana_logo.png');
-  background-position: center bottom 390px;
+  background-position: center bottom 0;
   background-repeat: no-repeat;
   background-size: contain;
   position: relative;
   z-index: 1;
+  padding-bottom: 60px;
+  @media(max-width: 767px){
+    padding-bottom: 40px;
+  }
+  &-image {
+    margin-bottom: 40px;
+    @media(max-width: 575px){
+      margin-bottom: 24px;
+    }
+  }
 }

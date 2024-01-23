@@ -1,40 +1,18 @@
-.image-left {
-  background-repeat: no-repeat;
-  background-size: calc(50% - 50px);
-  background-position: left bottom;
-  min-height: 400px;
-  position: relative;
-  .container {
-    position: relative;
-  }
-}
-.image-right {
-  background-repeat: no-repeat;
-  background-size: calc(50% - 75px);
-  background-position: right top;
-  min-height: 400px;
-  margin-top: 25px;
-  margin-bottom: -82px;
-  position: relative;
-  .container {
-    position: relative;
-  }
-}
+.placeTop {
+  .content-col {
+    &:nth-child(1){
+      @media(max-width: 575px){
+        order: 2;
+      }
+    }
+    &:nth-child(2){
 
-.img-left {
- width: calc(50% - 30px);
-  position: absolute;
-  object-fit: contain;
-  height: 100%;
-  top: 0;
-  height: 400px;
+    }
+  }
 }
-.img-right{
-  width: calc(50% - 30px);
-  position: absolute;
-  right: 0;
-  object-fit: contain;
-  height: 100%;
-  top: 0;
-  height: 400px;
+.place {
+  background-image: url('@img/sana_logo.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
